@@ -2,29 +2,16 @@
 
 
 # Group 11
-
-/*****************/
-
 # Members: 
 Fahim Morshed (BSSE 1102)
 Kazi Muktadir Ahmed (BSSE 1111)
-
-/*****************/
-
 # Supervisor: 
 Dr. Ahmedul Kabir
 Assistant Professor
 IIT, DU
-
-/****************/
-
 # Project Name: 
 The Restoration Project (An Open-world Action RPG game)
-
-/****************/
-
 # Introduction
-
 In this Software Project Lab-II, we intend to build an Open World, third-person
 shooting action RPG (Role Playing Game). The game will feature a dystopian
 future megacity featuring a story with vivid storytelling and complex character arcs
@@ -46,11 +33,7 @@ featured. Standard combat mechanics like 3rd person shooting, sniping, and melee
 combat mechanics like barehanded fighting, basic knife combats etc will also be
 implemented. Some stealth gameplay mechanics will also be included. The
 introductory mission and a few other missions will be implemented.
-
-/******************/
-
 # Scope
-
 As an open-world game, it is extremely time-consuming to build the whole map
 and populate it with meaningful quest lines and side activities. So we opted to
 build a much smaller intro area to showcase the tutorial for most of the game
@@ -59,18 +42,11 @@ open-world with only a smaller part of the city but with all the core game
 mechanics like standard movement mechanics, vehicle mechanics, basic combat
 mechanics like third-person shooting and some limited melee combats. We also
 want to work on some basic NPC AI’s (for example enemy AI).
-
-/***************/
-
 # Motivation
-
 The main motivation for our project came from the 2011 movie “In time” and the
 2020 game “Cyberpunk 2077”. But the main inspiration for world-building is the
 “Blade Runner” franchise.
-
-/***************/
 # Workplan
-
 We have created a rough map for the open-world. We will use Blender to render
 the game assets and import them in Unity which we chose as our game engine. We
 will do the necessary scripting as we go in C# and sometimes Objective C.
