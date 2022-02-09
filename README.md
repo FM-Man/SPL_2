@@ -1,31 +1,29 @@
 # SPL-II Proposal Form
 
 
-Group 11
+# Group 11
 
+/*****************/
 
-Members: 
-
+# Members: 
 Fahim Morshed (BSSE 1102)
-
 Kazi Muktadir Ahmed (BSSE 1111)
 
+/*****************/
 
-Supervisor: 
-
+# Supervisor: 
 Dr. Ahmedul Kabir
-
 Assistant Professor
-
 IIT, DU
 
+/****************/
 
-Project Name: 
-
+# Project Name: 
 The Restoration Project (An Open-world Action RPG game)
 
+/****************/
 
-Introduction
+# Introduction
 
 In this Software Project Lab-II, we intend to build an Open World, third-person
 shooting action RPG (Role Playing Game). The game will feature a dystopian
@@ -49,8 +47,9 @@ combat mechanics like barehanded fighting, basic knife combats etc will also be
 implemented. Some stealth gameplay mechanics will also be included. The
 introductory mission and a few other missions will be implemented.
 
+/******************/
 
-Scope
+# Scope
 
 As an open-world game, it is extremely time-consuming to build the whole map
 and populate it with meaningful quest lines and side activities. So we opted to
@@ -61,15 +60,16 @@ mechanics like standard movement mechanics, vehicle mechanics, basic combat
 mechanics like third-person shooting and some limited melee combats. We also
 want to work on some basic NPC AI’s (for example enemy AI).
 
+/***************/
 
-Motivation
+# Motivation
 
 The main motivation for our project came from the 2011 movie “In time” and the
 2020 game “Cyberpunk 2077”. But the main inspiration for world-building is the
 “Blade Runner” franchise.
 
-
-Workplan
+/***************/
+# Workplan
 
 We have created a rough map for the open-world. We will use Blender to render
 the game assets and import them in Unity which we chose as our game engine. We
