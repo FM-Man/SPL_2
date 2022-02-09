@@ -6,7 +6,7 @@
 Fahim Morshed (BSSE 1102) /n
 Kazi Muktadir Ahmed (BSSE 1111)
 # Supervisor: 
-Dr. Ahmedul Kabir /n
+Dr. Ahmedul Kabir </br>
 Assistant Professor /n
 IIT, DU 
 # Project Name: 
