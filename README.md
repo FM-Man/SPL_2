@@ -3,11 +3,11 @@
 
 # Group 11
 # Members: 
-Fahim Morshed (BSSE 1102) /n
+Fahim Morshed (BSSE 1102) </br>
 Kazi Muktadir Ahmed (BSSE 1111)
 # Supervisor: 
 Dr. Ahmedul Kabir </br>
-Assistant Professor /n
+Assistant Professor </br>
 IIT, DU 
 # Project Name: 
 The Restoration Project (An Open-world Action RPG game)
