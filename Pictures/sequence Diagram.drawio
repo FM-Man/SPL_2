@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2022-03-09T14:33:08.589Z" agent="5.0 (Windows)" etag="za6Qy5TiI0EMyHGeUfQN" version="17.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-09T15:14:12.296Z" agent="5.0 (Windows)" etag="DgeubHyPszEFuK4IpLIn" version="17.0.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="445" dy="231" grid="1" gridSize="10" guides="0" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="432" dy="472" grid="1" gridSize="10" guides="0" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-96" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fontSize=12;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="610" width="760" height="500" as="geometry" />
+        </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-76" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="110" y="379" width="390" height="210" as="geometry" />
         </mxCell>
@@ -11,7 +14,7 @@
           <mxGeometry x="110" y="150" width="390" height="210" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-1" value="Player" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="80" width="50" height="860" as="geometry" />
+          <mxGeometry x="120" y="80" width="50" height="1490" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-2" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-1" vertex="1">
           <mxGeometry x="20" y="80" width="10" height="190" as="geometry" />
@@ -46,14 +49,35 @@
             <mxPoint x="110" y="570" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-82" value="Load new Game" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="3nuBFxr9cyL0pnOWT2aG-1" target="_rLH7s73-tPlKPjFJsqt-11">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="30" y="680" as="sourcePoint" />
+            <mxPoint x="110" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-5" value="Character" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
-          <mxGeometry x="180" y="80" width="60" height="870" as="geometry" />
+          <mxGeometry x="180" y="80" width="60" height="1500" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-1" value="Bot" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="80" width="50" height="870" as="geometry" />
+          <mxGeometry x="250" y="80" width="50" height="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-91" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-1">
+          <mxGeometry x="20" y="900" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-99" value="Move" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=12;" edge="1" parent="_rLH7s73-tPlKPjFJsqt-1" target="_rLH7s73-tPlKPjFJsqt-9">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="30" y="1080" as="sourcePoint" />
+            <mxPoint x="110" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-100" value="Enter Vehicle" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=12;" edge="1" parent="_rLH7s73-tPlKPjFJsqt-1" target="_rLH7s73-tPlKPjFJsqt-25">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="30" y="1120" as="sourcePoint" />
+            <mxPoint x="110" y="1120" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-3" value="TRP" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="310" y="80" width="60" height="840" as="geometry" />
+          <mxGeometry x="310" y="80" width="60" height="1490" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-50" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-3">
           <mxGeometry x="25" y="80" width="10" height="170" as="geometry" />
@@ -89,7 +113,7 @@
           <mxGeometry x="26" y="550" width="10" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-5" value="Steam" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="80" width="50" height="830" as="geometry" />
+          <mxGeometry x="380" y="80" width="50" height="1500" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-51" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-5">
           <mxGeometry x="20" y="110" width="10" height="120" as="geometry" />
@@ -123,7 +147,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-7" value="Database" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="80" width="60" height="810" as="geometry" />
+          <mxGeometry x="440" y="80" width="60" height="1490" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-52" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-7">
           <mxGeometry x="25" y="120" width="10" height="80" as="geometry" />
@@ -132,85 +156,133 @@
           <mxGeometry x="25" y="400" width="10" height="80" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-9" value="Open&#xa;World" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="510" y="80" width="50" height="300" as="geometry" />
+          <mxGeometry x="510" y="80" width="50" height="1480" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-10" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-9">
-          <mxGeometry x="20" y="80" width="10" height="160" as="geometry" />
+          <mxGeometry x="20" y="610" width="10" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-86" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;Render Environment&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="_rLH7s73-tPlKPjFJsqt-9" target="_rLH7s73-tPlKPjFJsqt-14">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="30" y="790" as="sourcePoint" />
+            <mxPoint x="170" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-88" value="Set Physics" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=#FFFFFF;" edge="1" parent="_rLH7s73-tPlKPjFJsqt-9" target="_rLH7s73-tPlKPjFJsqt-13">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="30" y="850" as="sourcePoint" />
+            <mxPoint x="110" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-93" value="Mark Quest Location" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=12;" edge="1" parent="_rLH7s73-tPlKPjFJsqt-9" target="_rLH7s73-tPlKPjFJsqt-18">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="30" y="940" as="sourcePoint" />
+            <mxPoint x="110" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-98" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-9">
+          <mxGeometry x="20" y="1060" width="10" height="50" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-11" value="Single Player&#xa;Mode" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="80" width="80" height="300" as="geometry" />
+          <mxGeometry x="570" y="80" width="80" height="1490" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-12" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-11">
-          <mxGeometry x="35" y="80" width="10" height="160" as="geometry" />
+          <mxGeometry x="35" y="570" width="10" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-81" value="&lt;div&gt;Create New&lt;/div&gt;&lt;div&gt;Game World&lt;br&gt;&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="_rLH7s73-tPlKPjFJsqt-11" source="_rLH7s73-tPlKPjFJsqt-12">
+          <mxGeometry x="0.0769" width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="640" as="sourcePoint" />
+            <mxPoint x="-30" y="640" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-83" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;dashed=1;fillColor=none;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-11">
+          <mxGeometry x="40" y="720" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-84" value="&lt;div&gt;Fetch &lt;br&gt;&lt;/div&gt;&lt;div&gt;saved &lt;br&gt;&lt;/div&gt;&lt;div&gt;file&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="_rLH7s73-tPlKPjFJsqt-83" parent="_rLH7s73-tPlKPjFJsqt-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="700" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="70" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-85" value="Load Game" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;entryX=0;entryY=0.499;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.499;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="_rLH7s73-tPlKPjFJsqt-11" source="_rLH7s73-tPlKPjFJsqt-83">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="30" y="740" as="sourcePoint" />
+            <mxPoint x="-30" y="740" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-13" value="Environment" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="660" y="80" width="70" height="300" as="geometry" />
+          <mxGeometry x="660" y="80" width="70" height="1490" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-14" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-13">
-          <mxGeometry x="30" y="80" width="10" height="160" as="geometry" />
+          <mxGeometry x="30" y="760" width="10" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-87" value="&lt;div&gt;Load Game&lt;/div&gt;&lt;div&gt;Objects&lt;br&gt;&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=#FFFFFF;" edge="1" parent="_rLH7s73-tPlKPjFJsqt-13" target="_rLH7s73-tPlKPjFJsqt-16">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="40" y="820" as="sourcePoint" />
+            <mxPoint x="120" y="820" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-15" value="Game&#xa;Object" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="740" y="80" width="60" height="300" as="geometry" />
+          <mxGeometry x="740" y="80" width="60" height="1500" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-16" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-15">
-          <mxGeometry x="25" y="80" width="10" height="160" as="geometry" />
+          <mxGeometry x="25" y="800" width="10" height="50" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-17" value="Quest" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="810" y="80" width="50" height="300" as="geometry" />
-        </mxCell>
-        <mxCell id="_rLH7s73-tPlKPjFJsqt-18" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-17">
-          <mxGeometry x="20" y="80" width="10" height="160" as="geometry" />
+          <mxGeometry x="810" y="80" width="50" height="1510" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-19" value="In-Game&#xa;Item" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="870" y="80" width="60" height="300" as="geometry" />
+          <mxGeometry x="870" y="80" width="60" height="1500" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-20" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-19">
           <mxGeometry x="25" y="80" width="10" height="160" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-21" value="Weapon" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="80" width="70" height="300" as="geometry" />
+          <mxGeometry x="1080" y="80" width="70" height="1470" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-22" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-21">
           <mxGeometry x="30" y="80" width="10" height="160" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-23" value="Inventory" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="940" y="80" width="60" height="300" as="geometry" />
+          <mxGeometry x="940" y="80" width="60" height="1500" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-24" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-23">
           <mxGeometry x="25" y="80" width="10" height="160" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-25" value="Vehicle" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="80" width="60" height="300" as="geometry" />
+          <mxGeometry x="1010" y="80" width="60" height="1490" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-26" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-25">
-          <mxGeometry x="25" y="80" width="10" height="160" as="geometry" />
+          <mxGeometry x="25" y="1100" width="10" height="80" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-27" value="Shooting Based&#xa;Weapon" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="1160" y="80" width="100" height="300" as="geometry" />
+          <mxGeometry x="1160" y="80" width="100" height="1540" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-28" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-27">
           <mxGeometry x="45" y="80" width="10" height="160" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-29" value="Ammunition" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="1270" y="80" width="70" height="300" as="geometry" />
+          <mxGeometry x="1270" y="80" width="70" height="1550" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-30" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-29">
           <mxGeometry x="30" y="80" width="10" height="160" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-31" value="Bladed&#xa;Weapon" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="1350" y="80" width="60" height="300" as="geometry" />
+          <mxGeometry x="1350" y="80" width="60" height="1540" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-32" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-31">
           <mxGeometry x="25" y="80" width="10" height="160" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-33" value="&#xa;Instant&#xa;Heal&#xa;Pack&#xa;" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="1480" y="80" width="60" height="300" as="geometry" />
+          <mxGeometry x="1480" y="80" width="60" height="1530" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-34" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-33">
           <mxGeometry x="25" y="80" width="10" height="160" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-35" value="Party" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="1420" y="80" width="50" height="300" as="geometry" />
+          <mxGeometry x="1420" y="80" width="50" height="1550" as="geometry" />
         </mxCell>
         <mxCell id="_rLH7s73-tPlKPjFJsqt-36" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="_rLH7s73-tPlKPjFJsqt-35">
           <mxGeometry x="20" y="80" width="10" height="160" as="geometry" />
@@ -225,6 +297,45 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="335" y="436" as="sourcePoint" />
             <mxPoint x="150" y="436" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-80" value="Start New Game" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;exitX=0.891;exitY=0.738;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="_rLH7s73-tPlKPjFJsqt-78" target="_rLH7s73-tPlKPjFJsqt-11">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="350" y="670" as="sourcePoint" />
+            <mxPoint x="430" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-89" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="940" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-90" value="&lt;font style=&quot;font-size: 12px&quot;&gt;Spawn Player&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="_rLH7s73-tPlKPjFJsqt-9">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="230" y="960" as="sourcePoint" />
+            <mxPoint x="150" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-92" value="Populate NPCs" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=12;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="534.5" y="999" as="sourcePoint" />
+            <mxPoint x="280" y="999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-18" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="1000" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-94" value="Generate Quest" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=12;" edge="1" parent="1" target="_rLH7s73-tPlKPjFJsqt-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="1060" as="sourcePoint" />
+            <mxPoint x="750" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-97" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1140" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="_rLH7s73-tPlKPjFJsqt-101" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=12;" edge="1" parent="1" source="_rLH7s73-tPlKPjFJsqt-25">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="360" y="1230" as="sourcePoint" />
+            <mxPoint x="280" y="1230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
