@@ -1,1 +1,40 @@
-<mxfile host="app.diagrams.net" modified="2022-03-09T07:28:12.426Z" agent="5.0 (Windows)" version="17.0.0" etag="2RiQ_FXlGHJ3tSefhP_P" type="github"><diagram id="nL7v7ALvYe4OBJ3HppM-">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-03-09T07:28:26.883Z" agent="5.0 (Windows)" etag="jIvaq5549uwHV_tg4HZG" version="17.0.0" type="github">
+  <diagram id="nL7v7ALvYe4OBJ3HppM-" name="Page-1">
+    <mxGraphModel dx="395" dy="443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Hnz8HF51vuqpM_SQbqYr-1" value="Is Participated by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;strokeWidth=3;" edge="1" parent="1" source="Hnz8HF51vuqpM_SQbqYr-5" target="Hnz8HF51vuqpM_SQbqYr-6">
+          <mxGeometry x="-0.25" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hnz8HF51vuqpM_SQbqYr-2" value="&lt;font style=&quot;font-size: 16px&quot;&gt;has&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;" edge="1" parent="1" source="Hnz8HF51vuqpM_SQbqYr-5" target="Hnz8HF51vuqpM_SQbqYr-7">
+          <mxGeometry x="-0.3333" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hnz8HF51vuqpM_SQbqYr-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=3;" edge="1" parent="1" source="Hnz8HF51vuqpM_SQbqYr-5" target="Hnz8HF51vuqpM_SQbqYr-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnz8HF51vuqpM_SQbqYr-4" value="&lt;font style=&quot;font-size: 16px&quot;&gt;is made with&lt;br&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Hnz8HF51vuqpM_SQbqYr-3">
+          <mxGeometry x="-0.1704" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hnz8HF51vuqpM_SQbqYr-5" value="&lt;div&gt;&lt;font style=&quot;font-size: 24px&quot;&gt;Single Player Mode&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="270" y="170" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnz8HF51vuqpM_SQbqYr-6" value="&lt;font style=&quot;font-size: 24px&quot;&gt;Player&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="540" y="280" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnz8HF51vuqpM_SQbqYr-7" value="&lt;font style=&quot;font-size: 24px&quot;&gt;Open World&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="30" y="280" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnz8HF51vuqpM_SQbqYr-8" value="&lt;font style=&quot;font-size: 24px&quot;&gt;Quest&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="270" y="20" width="190" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
