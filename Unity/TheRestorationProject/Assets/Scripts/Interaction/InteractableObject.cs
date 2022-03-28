@@ -5,31 +5,30 @@ public class InteractableObject : MonoBehaviour
     public float radiusOfInteraction = 1.5f;
     bool isFocus;
     bool hasInteracted = false;
-    Transform player;
+    GameObject playerObject;
 
-    public void OnFocus(Transform playerTransform) { 
+    public void OnFocus(GameObject playergameobject) { 
         isFocus = true;
         hasInteracted = false;
-        player = playerTransform;
-
+        playerObject = playergameobject;
     }
     public void OnDefocus() { 
         isFocus=false;
         hasInteracted=false;
-        player = null;
+        playerObject=null;
     }
 
-    public virtual void Interact()
+    public virtual void Interact(Inventory inventory)
     {
 
     }
 
     public void Update() {
         if (isFocus && !hasInteracted) {
-            float distance = Vector3.Distance(player.position, transform.position);
+            float distance = Vector3.Distance(playerObject.transform.position, transform.position);
             if (distance < radiusOfInteraction) {
                 //Debug.Log("interact");
-                Interact();
+                Interact(playerObject.GetComponent<Inventory>());
                 hasInteracted = true;
             }
         }

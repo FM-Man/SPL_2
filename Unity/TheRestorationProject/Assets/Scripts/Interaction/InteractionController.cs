@@ -42,7 +42,7 @@ public class InteractionController : MonoBehaviour{
 
     void setFocus(InteractableObject newFocus) { 
         focus = newFocus;
-        newFocus.OnFocus(transform);
+        newFocus.OnFocus(gameObject);
     }
 
     void deFocus() {
