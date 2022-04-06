@@ -4,14 +4,14 @@ public class ItemPickUp : InteractableObject
 {
     public Item item;
 
-    public override void Interact(Inventory inventory) { 
+    public override void Interact(Inventory inventory) 
+    { 
         //base.Interact();
         PickUp(inventory);
-        Debug.Log("Interact");
     }
 
-    void PickUp(Inventory inventory) {
-        Debug.Log("picking up item "+item.name);
+    void PickUp(Inventory inventory) 
+    {
         //adding to inventory
         if (inventory.Add(item)) 
         {

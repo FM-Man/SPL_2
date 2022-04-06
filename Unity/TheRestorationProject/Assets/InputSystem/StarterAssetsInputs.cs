@@ -7,7 +7,7 @@ namespace StarterAssets
 {
 	public class StarterAssetsInputs : MonoBehaviour
 	{
-		[Header("Character Input Values")]
+        [Header("Character Input Values")]
 		public Vector2 move;
 		public Vector2 look;
 		public bool jump;
@@ -15,6 +15,8 @@ namespace StarterAssets
 		public bool sprint;
 		public bool aim;
         public bool shoot;
+		public bool shootable;
+		public bool inventoryUI;
 
         [Header("Movement Settings")]
 		public bool analogMovement;
@@ -47,7 +49,12 @@ namespace StarterAssets
 		}
 		public void OnShoot(InputValue value)
 		{
-			ShootInput(value.isPressed);
+			if(shootable)
+				ShootInput(value.isPressed);
+		}
+		public void OnInventoryUI(InputValue value)
+		{
+			InventoryUIInput(value.isPressed);
 		}
 		public void OnPickUp(InputValue value)
 		{
@@ -84,6 +91,10 @@ namespace StarterAssets
 		public void ShootInput(bool newShootState)
 		{
 			Shoot = newShootState;
+		}
+		public void InventoryUIInput(bool newInventoryUIState)
+		{
+			inventoryUI = newInventoryUIState;
 		}
 		public void PickUpInput(bool newPickUpState)
 		{

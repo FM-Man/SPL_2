@@ -1,10 +1,14 @@
 using UnityEngine;
+using StarterAssets;
+using UnityEngine.InputSystem;
 
 public class InventoryUI : MonoBehaviour
 {
     public GameObject playerGameObject;
-    public Transform itemsParent;
+    public GameObject inventoryUI;
+    GameObject itemsParent;
     Inventory playerInventory;
+    StarterAssetsInputs inputSystem;
 
     InventorySlot[] slots;
 
@@ -13,8 +17,28 @@ public class InventoryUI : MonoBehaviour
     {
         playerInventory = playerGameObject.GetComponent<Inventory>();
         playerInventory.onItemChangedCallBack += UpdateUI;
+        itemsParent = transform.Find("Inventory").transform.Find("itemsParent").gameObject;
+        inputSystem = playerGameObject.GetComponent<StarterAssetsInputs>();
+        slots = itemsParent.transform.GetComponentsInChildren<InventorySlot>();
+        
+    }
 
-        slots = itemsParent.GetComponentsInChildren<InventorySlot>();
+    void Update() {
+        if (inputSystem.inventoryUI) 
+        {
+            if (inventoryUI.activeSelf) 
+            {
+                inventoryUI.SetActive(false);
+                inputSystem.shootable = true;
+            }
+            else
+            {
+                inventoryUI.SetActive(true);
+                inputSystem.shootable = false;
+            }
+            inputSystem.inventoryUI = false;
+        }
+        
     }
 
     void UpdateUI() 

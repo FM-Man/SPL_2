@@ -11,11 +11,18 @@ public class ShooterController : MonoBehaviour{
     [SerializeField] private float aimSensitivity;
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
     [SerializeField] private Transform aimObject;
-    [SerializeField] private Transform bulletTransform;
+    [SerializeField] private GameObject bullet;
     [SerializeField] private Transform spawnBullet;
 
     private StarterAssetsInputs starterAssetsInputs;
     private ThirdPersonController thirdPersonController;
+
+    void Start()
+    {
+        starterAssetsInputs = GetComponent<StarterAssetsInputs>();
+        thirdPersonController = GetComponent<ThirdPersonController>();
+        starterAssetsInputs.shootable = true;
+    }
 
     private void Awake() {
         starterAssetsInputs = GetComponent<StarterAssetsInputs> ();
@@ -46,16 +53,12 @@ public class ShooterController : MonoBehaviour{
             if (starterAssetsInputs.shoot)
             {
                 //creating a bullet projectile
+                bullet.SetActive(true);
                 Vector3 aimDir = (worldMousePosition - spawnBullet.position).normalized;
-                Instantiate(bulletTransform, spawnBullet.position, Quaternion.LookRotation(aimDir, Vector3.up));
-
-                //moving the player direction to where he is shooting
-                /*Vector3 worldAimTarget = worldMousePosition;
-                worldAimTarget.y = transform.position.y;
-                Vector3 aimMoveDirection = (worldAimTarget - transform.position).normalized;
-                transform.forward = aimMoveDirection;*/
+                Instantiate(bullet.transform, spawnBullet.position, Quaternion.LookRotation(aimDir, Vector3.up));
 
                 starterAssetsInputs.shoot = false;
+                bullet.SetActive(false);
             }
         }
         else{

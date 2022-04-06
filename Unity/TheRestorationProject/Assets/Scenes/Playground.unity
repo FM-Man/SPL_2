@@ -1569,6 +1569,8 @@ MonoBehaviour:
   sprint: 0
   aim: 0
   shoot: 0
+  shootable: 0
+  inventoryUI: 0
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
@@ -18164,6 +18166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerGameObject: {fileID: 4416926083347132227}
+  inventoryUI: {fileID: 1982185904}
   itemsParent: {fileID: 1140193088}
 --- !u!1 &2111582378
 GameObject:
@@ -18418,6 +18421,8 @@ MonoBehaviour:
   sprint: 0
   aim: 0
   shoot: 0
+  shootable: 0
+  inventoryUI: 0
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
