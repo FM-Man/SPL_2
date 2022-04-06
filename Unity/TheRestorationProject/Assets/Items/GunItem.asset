@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GunItem
   m_EditorClassIdentifier: 
   name: daGAAAAN
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 17288d901ac799346a2aa4e7cced8728, type: 3}
   isDefaultItem: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public List<Item> items = new List<Item>();
-    public int space = 10;
+    public int space = 20;
 
     //to invoke an event when the inventory has changed
     public delegate void OnItemChanged();
@@ -18,7 +18,7 @@ public class Inventory : MonoBehaviour
             if (items.Count < space)
             {
                 items.Add(item);
-                if(onItemChangedCallBack != null) 
+                if (onItemChangedCallBack != null)
                     onItemChangedCallBack.Invoke();
                 return true;
             }

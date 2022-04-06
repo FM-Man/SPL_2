@@ -41,25 +41,33 @@ public class ShooterController : MonoBehaviour{
             Vector3 aimMoveDirection = (worldAimTarget-transform.position).normalized;
 
             transform.forward = Vector3.Lerp(transform.forward, aimMoveDirection, Time.deltaTime*20f);
+
+            //shooting
+            if (starterAssetsInputs.shoot)
+            {
+                //creating a bullet projectile
+                Vector3 aimDir = (worldMousePosition - spawnBullet.position).normalized;
+                Instantiate(bulletTransform, spawnBullet.position, Quaternion.LookRotation(aimDir, Vector3.up));
+
+                //moving the player direction to where he is shooting
+                /*Vector3 worldAimTarget = worldMousePosition;
+                worldAimTarget.y = transform.position.y;
+                Vector3 aimMoveDirection = (worldAimTarget - transform.position).normalized;
+                transform.forward = aimMoveDirection;*/
+
+                starterAssetsInputs.shoot = false;
+            }
         }
         else{
             aimVirtualCamera.gameObject.SetActive(false);
             thirdPersonController.setSensitivity(normalSensitivity);
         }
 
-        //shooting
-        if (starterAssetsInputs.shoot) {
-            //creating a bullet projectile
-            Vector3 aimDir = (worldMousePosition - spawnBullet.position).normalized;
-            Instantiate(bulletTransform, spawnBullet.position, Quaternion.LookRotation(aimDir,Vector3.up));
-            
-            //moving the player direction to where he is shooting
-            Vector3 worldAimTarget = worldMousePosition;
-            worldAimTarget.y = transform.position.y;
-            Vector3 aimMoveDirection = (worldAimTarget - transform.position).normalized;
-            transform.forward = aimMoveDirection;
-
+        if (starterAssetsInputs.shoot)
+        {
             starterAssetsInputs.shoot = false;
         }
+
+        
     }
 }
