@@ -23,7 +23,7 @@ namespace StarterAssets
 
 #if !UNITY_IOS || !UNITY_ANDROID
 		[Header("Mouse Cursor Settings")]
-		public bool cursorLocked = true;
+		public bool cursorLocked = false;
 		public bool cursorInputForLook = true;
 
         public global::System.Boolean Shoot { get => shoot; set => shoot = value; }
@@ -69,6 +69,7 @@ namespace StarterAssets
 		public void OnAim(InputValue value){
 			AimInput(value.isPressed);
 		}
+
 #else
 		// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -88,6 +89,8 @@ namespace StarterAssets
 		{
 			jump = newJumpState;
 		}
+
+
 		public void ShootInput(bool newShootState)
 		{
 			Shoot = newShootState;
@@ -119,7 +122,8 @@ namespace StarterAssets
 
 		private void SetCursorState(bool newState)
 		{
-			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+			Cursor.lockState = newState ? CursorLockMode.None : CursorLockMode.None;
+			Cursor.visible = true;
 		}
 
 #endif
