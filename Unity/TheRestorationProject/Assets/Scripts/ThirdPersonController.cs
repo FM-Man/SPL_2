@@ -266,6 +266,7 @@ namespace StarterAssets
 					{
 						_animator.SetBool(_animIDJump, true);
 					}
+					_input.jump = false;
 				}
 
 				// jump timeout
@@ -301,6 +302,7 @@ namespace StarterAssets
 			if (_verticalVelocity < _terminalVelocity)
 			{
 				_verticalVelocity += Gravity * Time.deltaTime;
+				_input.jump = false;
 			}
 		}
 

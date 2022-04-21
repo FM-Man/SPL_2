@@ -30,9 +30,14 @@ public class InteractionController : MonoBehaviour{
                     if (interactable != null) {//if there is no focus and the ray hit something then focus on that
                         setFocus(interactable);
                     }
+                    else
+                    {
+                        starterAssetsInputs.pickUp = false;
+                    }
                 }
                 else {//else defocus
                     deFocus();
+                    starterAssetsInputs.pickUp = false;
                 }
             }
 

@@ -26,8 +26,6 @@ public class InventorySlot : MonoBehaviour
         icon.enabled = true;
         removeButton.interactable = true;
         removeButton.onClick.AddListener(delegate { playerInventory.Remove(item); });
-        //removeButton.OnClick += () => { playerInventory.Remove(item); };
-        //Controls.Add(removeButton);
     }
 
     public void ClearSlot() 
@@ -41,5 +39,10 @@ public class InventorySlot : MonoBehaviour
     public void OnRemoveButton() { 
         playerInventory.Remove(item);
 
+    }
+
+    public void OnItemButtn()
+    {
+        item.Use();
     }
 }
