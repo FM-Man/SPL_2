@@ -16,12 +16,15 @@ public class ShooterController : MonoBehaviour{
 
     private StarterAssetsInputs starterAssetsInputs;
     private ThirdPersonController thirdPersonController;
+    Animator animator;
+    bool aiming = false;
 
     void Start()
     {
         starterAssetsInputs = GetComponent<StarterAssetsInputs>();
         thirdPersonController = GetComponent<ThirdPersonController>();
         starterAssetsInputs.shootable = true;
+        animator = GetComponent<Animator>();
     }
 
     private void Awake() {
@@ -43,11 +46,20 @@ public class ShooterController : MonoBehaviour{
             aimVirtualCamera.gameObject.SetActive(true);
             thirdPersonController.setSensitivity(aimSensitivity);
 
+            if (!aiming)
+            {
+                animator.SetBool("Aim", true);
+                aiming = true;
+            }
+
             Vector3 worldAimTarget = worldMousePosition;
             worldAimTarget.y = transform.position.y;
+            worldAimTarget.x = worldAimTarget.x + 20;
             Vector3 aimMoveDirection = (worldAimTarget-transform.position).normalized;
-
+            //aiming animation
+            
             transform.forward = Vector3.Lerp(transform.forward, aimMoveDirection, Time.deltaTime*20f);
+
 
             //shooting
             if (starterAssetsInputs.shoot)
@@ -57,18 +69,31 @@ public class ShooterController : MonoBehaviour{
                 Vector3 aimDir = (worldMousePosition - spawnBullet.position).normalized;
                 Instantiate(bullet.transform, spawnBullet.position, Quaternion.LookRotation(aimDir, Vector3.up));
 
+                animator.SetBool("Shoot", true);
+
                 starterAssetsInputs.shoot = false;
                 bullet.SetActive(false);
+            }
+            else
+            {
+                animator.SetBool("Shoot", false);
             }
         }
         else{
             aimVirtualCamera.gameObject.SetActive(false);
             thirdPersonController.setSensitivity(normalSensitivity);
+            //turning off aiming animation
+            if (aiming)
+            {
+                animator.SetBool("Aim", false);
+                aiming = false;
+            }
         }
 
         if (starterAssetsInputs.shoot)
         {
             starterAssetsInputs.shoot = false;
+            //animator.SetBool("Shoot", false);
         }
 
         

@@ -70,7 +70,7 @@ namespace StarterAssets
 		private float _targetRotation = 0.0f;
 		private float _rotationVelocity;
 		private float _verticalVelocity;
-		private float _terminalVelocity = 53.0f;
+		private float _terminalVelocity = 553.0f;
 
 		// timeout deltatime
 		private float _jumpTimeoutDelta;
@@ -260,6 +260,7 @@ namespace StarterAssets
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
 					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+					
 
 					// update animator if using character
 					if (_hasAnimator)

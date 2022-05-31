@@ -17,8 +17,9 @@ namespace StarterAssets
         public bool shoot;
 		public bool shootable;
 		public bool inventoryUI;
+		public bool testAnimate;
 
-        [Header("Movement Settings")]
+		[Header("Movement Settings")]
 		public bool analogMovement;
 
 #if !UNITY_IOS || !UNITY_ANDROID
@@ -70,6 +71,11 @@ namespace StarterAssets
 			AimInput(value.isPressed);
 		}
 
+		public void OnAnimateTest(InputValue value)
+		{
+			TestAnimateInput(value.isPressed);
+		}
+
 #else
 		// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -111,6 +117,10 @@ namespace StarterAssets
 		public void AimInput(bool newAimState)
 		{
 			aim = newAimState;
+		}
+		public void TestAnimateInput(bool newTestAnimateState)
+		{
+			testAnimate = newTestAnimateState;
 		}
 
 #if !UNITY_IOS || !UNITY_ANDROID
