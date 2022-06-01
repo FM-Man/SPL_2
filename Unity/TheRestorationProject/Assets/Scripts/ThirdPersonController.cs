@@ -23,7 +23,7 @@ namespace StarterAssets
 		[Range(0.0f, 0.3f)]
 		public float RotationSmoothTime = 0.12f;
 		[Tooltip("Acceleration and deceleration")]
-		public float SpeedChangeRate = 10.0f;
+		public float SpeedChangeRate = 20.0f;
 		public float Sensitiviy = 1.0f;
 
 		[Space(10)]
@@ -77,11 +77,11 @@ namespace StarterAssets
 		private float _fallTimeoutDelta;
 
 		// animation IDs
-		private int _animIDSpeed;
-		private int _animIDGrounded;
-		private int _animIDJump;
-		private int _animIDFreeFall;
-		private int _animIDMotionSpeed;
+		public int _animIDSpeed;
+		public int _animIDGrounded;
+		public int _animIDJump;
+		public int _animIDFreeFall;
+		public int _animIDMotionSpeed;
 
 		private PlayerInput _playerInput;
 		private Animator _animator;
@@ -226,6 +226,8 @@ namespace StarterAssets
 
 			// move the player
 			_controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+
+			if (_animationBlend < 0) { _animationBlend = 0; }
 
 			// update animator if using character
 			if (_hasAnimator)

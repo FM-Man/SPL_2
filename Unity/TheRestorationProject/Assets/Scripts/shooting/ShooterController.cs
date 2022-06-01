@@ -54,7 +54,7 @@ public class ShooterController : MonoBehaviour{
 
             Vector3 worldAimTarget = worldMousePosition;
             worldAimTarget.y = transform.position.y;
-            worldAimTarget.x = worldAimTarget.x + 20;
+            //worldAimTarget.x = worldAimTarget.x + 20;
             Vector3 aimMoveDirection = (worldAimTarget-transform.position).normalized;
             //aiming animation
             
