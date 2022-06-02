@@ -29,19 +29,23 @@ public class InteractionController : MonoBehaviour{
                 if (focus == null){
                     if (interactable != null) {//if there is no focus and the ray hit something then focus on that
                         setFocus(interactable);
+                        GetComponent<Animator>().SetBool("PickingUp", false);
                     }
                     else
                     {
                         starterAssetsInputs.pickUp = false;
+                        GetComponent<Animator>().SetBool("PickingUp", false);
                     }
                 }
                 else {//else defocus
                     deFocus();
                     starterAssetsInputs.pickUp = false;
+                    GetComponent<Animator>().SetBool("PickingUp", false);
                 }
             }
 
             starterAssetsInputs.pickUp = false;
+            GetComponent<Animator>().SetBool("PickingUp", false);
         }
     }
 

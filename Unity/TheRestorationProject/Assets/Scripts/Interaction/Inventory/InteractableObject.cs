@@ -18,7 +18,7 @@ public class InteractableObject : MonoBehaviour
         playerObject=null;
     }
 
-    public virtual void Interact(Inventory inventory)
+    public virtual void Interact(GameObject player)
     {
 
     }
@@ -28,7 +28,7 @@ public class InteractableObject : MonoBehaviour
             float distance = Vector3.Distance(playerObject.transform.position, transform.position);
             if (distance < radiusOfInteraction) {
                 //Debug.Log("interact");
-                Interact(playerObject.GetComponent<Inventory>());
+                Interact(playerObject);
                 hasInteracted = true;
             }
         }

@@ -18,6 +18,7 @@ public class ShooterController : MonoBehaviour{
     private ThirdPersonController thirdPersonController;
     Animator animator;
     bool aiming = false;
+    public bool hasGun = false;
 
     void Start()
     {
@@ -32,6 +33,11 @@ public class ShooterController : MonoBehaviour{
         thirdPersonController = GetComponent<ThirdPersonController>();
     }
 
+    public void SetGun(bool x)
+    {
+        hasGun = x;
+    }
+
     private void Update() {
         Vector3 worldMousePosition = Vector3.zero;
         Vector2 screenCenterPoint = new Vector2(Screen.width/2f , Screen.height/2f);
@@ -42,7 +48,7 @@ public class ShooterController : MonoBehaviour{
         }
 
         //aiming
-        if(starterAssetsInputs.aim){
+        if(starterAssetsInputs.aim && hasGun){
             aimVirtualCamera.gameObject.SetActive(true);
             thirdPersonController.setSensitivity(aimSensitivity);
 
@@ -78,6 +84,10 @@ public class ShooterController : MonoBehaviour{
             {
                 animator.SetBool("Shoot", false);
             }
+        }
+        else if (starterAssetsInputs.aim)
+        {
+            starterAssetsInputs.aim = false;
         }
         else{
             aimVirtualCamera.gameObject.SetActive(false);

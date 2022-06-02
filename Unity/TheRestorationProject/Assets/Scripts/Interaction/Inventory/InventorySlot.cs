@@ -7,6 +7,7 @@ public class InventorySlot : MonoBehaviour
     Item item;
     Button removeButton;
     Inventory playerInventory;
+    GameObject player;
 
     public void Start()
     {
@@ -14,9 +15,10 @@ public class InventorySlot : MonoBehaviour
         removeButton = transform.Find("removeButton").GetComponent<Button>();
     }
 
-    public void SetInventory(Inventory inventory) 
+    public void SetInventory(Inventory inventory, GameObject playerGameObject) 
     { 
         playerInventory = inventory;
+        player = playerGameObject;
     }
 
     public void AddItem(Item newItem) 
@@ -43,6 +45,6 @@ public class InventorySlot : MonoBehaviour
 
     public void OnItemButtn()
     {
-        item.Use();
+        item.Use(player);
     }
 }

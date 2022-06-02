@@ -17,16 +17,13 @@ public class bulletProjectile : MonoBehaviour{
     }
    
 
-    private void OnTriggerEnter(Collider hitObject) {
+    private void OnTriggerEnter(Collider hitObject) 
+    {
         Destroy(gameObject);
-        if (hitObject.GetComponent<targets>() != null){
+        if (hitObject.GetComponent<targets>() != null)
+        {
             //hit target
-            Instantiate(redParticle, transform.position, Quaternion.identity);
+            hitObject.GetComponent<targets>().EatDamage(10);
         }
-        else {
-            //something else
-            Instantiate(greenParticle, transform.position, Quaternion.identity);
-        }
-        
     }
 }

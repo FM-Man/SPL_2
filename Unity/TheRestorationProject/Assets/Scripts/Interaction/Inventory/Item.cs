@@ -7,7 +7,7 @@ public class Item : ScriptableObject
     public Sprite icon = null;
     public bool isDefaultItem = false;
 
-    public virtual void Use()
+    public virtual void Use(GameObject player)
     {
         Debug.Log("Using " + name + " item");
     }

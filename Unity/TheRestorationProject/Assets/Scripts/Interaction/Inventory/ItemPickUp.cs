@@ -4,10 +4,11 @@ public class ItemPickUp : InteractableObject
 {
     public Item item;
 
-    public override void Interact(Inventory inventory) 
+    public override void Interact(GameObject player) 
     { 
         //base.Interact();
-        PickUp(inventory);
+        PickUp(player.GetComponent<Inventory>());
+        player.GetComponent<Animator>().SetBool("PickingUp", true);
     }
 
     void PickUp(Inventory inventory) 
