@@ -18,6 +18,7 @@ namespace StarterAssets
 		public bool shootable;
 		public bool inventoryUI;
 		public bool testAnimate;
+		public bool pause;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -76,6 +77,11 @@ namespace StarterAssets
 			TestAnimateInput(value.isPressed);
 		}
 
+		public void OnPause(InputValue value)
+		{
+			PauseInput(value.isPressed);
+		}
+
 #else
 		// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -121,6 +127,11 @@ namespace StarterAssets
 		public void TestAnimateInput(bool newTestAnimateState)
 		{
 			testAnimate = newTestAnimateState;
+		}
+
+		public void PauseInput(bool newPauseState)
+		{
+			pause = newPauseState;
 		}
 
 #if !UNITY_IOS || !UNITY_ANDROID
